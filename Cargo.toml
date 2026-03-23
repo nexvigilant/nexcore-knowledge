@@ -1,0 +1,23 @@
+
+[package]
+name = "nexcore-knowledge"
+version = "1.0.0"
+edition = "2024"
+authors = ["NexVigilant Team <team@nexvigilant.com>"]
+license = "LicenseRef-Proprietary"
+description = "KSB (Knowledge-Skills-Behaviors) module for NexVigilant Core with 628 PV articles"
+
+[dependencies]
+nexcore-lex-primitiva = { version = "0.1.0", path = "../nexcore-lex-primitiva", registry = "nexcore" }
+serde = { version = "1.0.204", features = ["derive"] }
+serde_yml = { version = "0.0.12" }
+nexcore-fs = { workspace = true }
+rayon = { version = "1.10.0" }
+regex = { version = "1.10.5" }
+
+[dev-dependencies]
+tempfile = { version = "3.10.1" }
+
+
+[lints]
+workspace = true
